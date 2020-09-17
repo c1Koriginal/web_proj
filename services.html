@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!--
+      Author: Maksym Kuzmenko
+      Date:   April 11, 2018
+
+      Filename:         0. services.html
+      Supporting files: html files: 1. index.html, 2. quick-fix.html, 3.about-us.html, 4. contact-us.html
+                        css files: 1. style.scc, 2. mobile.css, 3. fonts.css
+                        js.files: 1. show-Time.js
+    -->
+
+    <meta charset="utf-8" />
+    <title>Express Repairs</title>
+    
+    <meta name="Maksym Kuzmenko" content="Express Repairs & Consultants LTD." />
+    <meta name="description" content="Express computer repair services" />
+    <meta name="keywords" content="Computer, Repair, Services, Kamloops, Express Repairs" />
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+    <!-- . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . FONTS . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . -->
+
+    <link href="http://fonts.googleapis.com/css?family=Source+Sans+Pro:200,300,400,600,700,900" rel="stylesheet" />
+    <link href="fonts.css" rel="stylesheet" type="text/css" media="all" />
+
+    <!-- . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . STYLESHEETS . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . -->
+
+    <link href="css/style.css" rel="stylesheet" type="text/css" media="all" />
+    <link href="css/mobile.css" rel="stylesheet" type="text/css" media="all" />
+
+    <!-- . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . SCRIPT . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . -->
+
+    <script src="js/show-Time.js"></script>
+
+</head>
+
+    <!-- . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . SERVICES . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . -->
+
+<body onload="showClock(); setInterval('showClock()', 1000 )">
+    <div id="wrapper">
+        <div id="header-wrapper">
+            <div id="header" class="containe">
+                <div id="logo">
+                    <h1><a href="index.html">Express Repairs</a></h1>
+                </div>
+                <div id="social">
+                    <ul class="contact">
+                        <li><a href="https://twitter.com/" class="icon icon-twitter"><span>Twitter</span></a></li>
+                        <li><a href="https://www.facebook.com/" class="icon icon-facebook"><span>Facebook</span></a></li>
+                        <li><a href="https://www.tumblr.com/" class="icon icon-tumblr"><span>Google+</span></a></li>
+                    </ul>
+                </div>
+            </div>
+            <nav id="menu" class="nav">
+                <ul>
+                    <li><a href="index.html" class="nav-pages">Homepage</a></li>
+                    <li class="current_page"><a href="#" class="nav-pages">Services</a></li>
+                    <li><a href="quick-fix.html" class="nav-pages">Quick fix</a></li>
+                    <li><a href="about-us.html" class="nav-pages">About Us</a></li>
+                    <li><a href="contact-us.html" class="nav-pages">Contact Us</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div id="h-info" class="container">
+            <div>
+                <h2>How much?</h2>
+            </div>
+            <p>If you have already checked our "<a href="quick-fix.html">quick-fix</a>" recommendations, but it didn't help you, that means that you do have problems that even this universal tool can't help.</p>
+            <p>It's time to call a professional and we can help you with that. This is our price list for all our services.</p>
+        </div>
+        <div class="tg-wrap">
+            <table class="tg">
+                <colgroup>
+                    <col style="width: 358.003906px">
+                    <col style="width: 483.003906px">
+                    <col style="width: 68.003906px">
+                    <col style="width: 69.003906px">
+                </colgroup>
+                <tr>
+                    <th class="tg-eh2d"><br><br>Name of the service</th>
+                    <th class="tg-us36">Description</th>
+                    <th class="tg-v7c1">Cost</th>
+                    <th class="tg-yw4l">Other</th>
+                </tr>
+                <tr>
+                    <td class="tg-us36">In Store Flat Fee PC Repair</td>
+                    <td class="tg-us36">This service includes, diagnostics, Adware, Spyware, Virus and Trojan Removal, and a PC Tuneup. We are extrememely thourough, and work very hard to remove all malware without resorting to formatting your computer.</td>
+                    <td class="tg-v7c1">$150</td>
+                    <td class="tg-9hbo">Includes Services Below</td>
+                </tr>
+                <tr>
+                    <td class="tg-us36">Computer Evaluation</td>
+                    <td class="tg-us36">Hardware Testing, and evaluation will provide a diagnostic as to the current condition of your computer, estimated life expectancy and cost benefit analysis as to whether or not other services are warranted. This fee is not an additional fee to our "Flat Fee Computer Repair".</td>
+                    <td class="tg-v7c1">$45</td>
+                    <td class="tg-9hbo">YES</td>
+                </tr>
+                <tr>
+                    <td class="tg-us36">Laptop Hardware Repair</td>
+                    <td class="tg-us36">This is a per component fee for hardware replacement. Keyboards, RAM, and Hard drive replacement are examples. Hardware Costs are extra.</td>
+                    <td class="tg-v7c1">$30</td>
+                    <td class="tg-8b1q">n/a</td>
+                </tr>
+                <tr>
+                    <td class="tg-us36">PC Hardware Upgrades</td>
+                    <td class="tg-us36">This is a per component fee for hardware replacement. RAM, Video Cards, CPUs, Power Supplies, Sound Cards and Hard drive replacement are examples. Hardware Costs are extra.</td>
+                    <td class="tg-v7c1">$20</td>
+                    <td class="tg-9hbo">YES</td>
+                </tr>
+                <tr>
+                    <td class="tg-us36">Software Installation</td>
+                    <td class="tg-us36">Programs are getting more complex as time goes on. If you want to make sure that your programs are installed correctly we will be happy to install and configure it for you. Our fee is per program installed.</td>
+                    <td class="tg-v7c1">$10</td>
+                    <td class="tg-9hbo">YES</td>
+                </tr>
+                <tr>
+                    <td class="tg-us36">Laptop Rental</td>
+                    <td class="tg-us36">For times where you just cannot be without a computer, we offer a loaner laptop for a small service fee. This is a fixed fee for the entire time your computer is in our shop. The laptop has anti-virus, Microsoft Office, Microsoft Windows XP and wireless. You will be granted administrator rights to install any additional applications that are necessary. None of your personal data will stay on the machine. Upon return, we will delete everything that you saved or installed. Depending on the age and condition of your computer, an additional deposit may be required.</td>
+                    <td class="tg-v7c1">$40</td>
+                    <td class="tg-8b1q">n/a</td>
+                </tr>
+                <tr>
+                    <td class="tg-us36">On Site Service</td>
+                    <td class="tg-us36">Express Repairs will send a technician to your location to attempt to fix your Computer Problems. If we are unable to fix the problem in 1 hour, we will bring the computer back to our lab for diagnostics and testing. Our trip charge is for any location in Corpus Christi.,For other locations, please contact us for a quote.</td>
+                    <td class="tg-v7c1">$30</td>
+                    <td class="tg-8b1q">n/a</td>
+                </tr>
+                <tr>
+                    <td class="tg-us36">Expired Anti-Virus Removal and Replacement</td>
+                    <td class="tg-us36">Did your computer come with a 'free' anti-virus that's now no longer working and asking you for money? We'll remove all old anti-virus software and replace it with the latest free anti-virus software (usually Microsoft Security Essentials), and no further ongoing payments will be required.</td>
+                    <td class="tg-v7c1">$30</td>
+                    <td class="tg-9hbo">YES</td>
+                </tr>
+                <tr>
+                    <td class="tg-us36">Cut in Line Service</td>
+                    <td class="tg-us36">With this fee you can become the first in line, and jump ahead of everyone else in the queue.</td>
+                    <td class="tg-v7c1">$40</td>
+                    <td class="tg-8b1q">n/a</td>
+                </tr>
+                <tr>
+                    <td class="tg-us36">Data Recovery</td>
+                    <td class="tg-us36">In most cases we are able to recover your data (pictures, music, documents) from your hard drive even if the computer will not boot. The price for this option is not fixed. Our minimum price is shown. We will be able to provide a quote after evaluation.</td>
+                    <td class="tg-v7c1">$100 - Contact Us</td>
+                    <td class="tg-8b1q">n/a</td>
+                </tr>
+                <tr>
+                    <td class="tg-us36">New PC Recommendation and Cleanup</td>
+                    <td class="tg-us36">We will find the best computer for you that fits your needs and your budget. We will also remove any trial-ware applications, trial antivirus, and Crud-ware installed on the machine from the Vendor. We will also order the computer for you, and clean it so by the time you receive it, your new PC or Laptop is really ready to go.</td>
+                    <td class="tg-v7c1">$50</td>
+                    <td class="tg-8b1q">n/a</td>
+                </tr>
+                <tr>
+                    <td class="tg-us36">Wireless Network Installation and Configuration</td>
+                    <td class="tg-us36">We will securely install and configure your wireless network (up to 2 devices). Additional configuration fee for other devices is $25.</td>
+                    <td class="tg-v7c1">$150</td>
+                    <td class="tg-8b1q">n/a</td>
+                </tr>
+                <tr>
+                    <td class="tg-us36">PC Tuneup</td>
+                    <td class="tg-us36">If your computer is running slowly, it may not be a virus, it could be due to a conflicted registry, and you may have too many services running. This service also includes cleanup of temporary files, disk defragmentation, and a disk check. We will also also run a stress test, and give you an approximation on the lifespan of your machine.</td>
+                    <td class="tg-v7c1">$75</td>
+                    <td class="tg-9hbo">YES</td>
+                </tr>
+                <tr>
+                    <td class="tg-us36">Malware Removal</td>
+                    <td class="tg-us36">If your computer has a virus, worm, trojan, ad-ware or any other type of malware, we can usually remove them all without formatting your computer and losing your data.</td>
+                    <td class="tg-v7c1">$75</td>
+                    <td class="tg-9hbo">YES</td>
+                </tr>
+                <tr>
+                    <td class="tg-us36">Operating System Re-Installation</td>
+                    <td class="tg-us36">If you don't have your PC's recovery disks, we will assist you in ordering them (installation media costs extra). We will re-install the operating system and all of the computers drivers, and back up your documents pictures and music before reinstallation.</td>
+                    <td class="tg-v7c1">$100</td>
+                    <td class="tg-9hbo">YES</td>
+                </tr>
+            </table>
+        </div>
+
+        <div id="portfolio-wrapper">
+            <div id="portfolio" class="container">
+                <div class="title">
+                    Our motto
+                    <span class="byline">Think smart and work hard.</span></div>
+                <h3>Our partners</h3>
+                <ol>
+                    <div class="column">
+                        <div class="box">
+                            <li>
+                                <h3>Simba</h3>
+                            </li>
+                            <p>If you are looking for someone to deal with computer and network maintenance in Virginia, these guys you are looking for.</p>
+                            <a href="http://simbacom.net/hardware-networking/" class="button">simbacom.net</a></div>
+                    </div>
+                    <div class="column">
+                        <div class="box">
+                            <li>
+                                <h3>Pc Doctors</h3>
+                            </li>
+                            <p>Those guys are the best mobile technicians in Kamloops. They also have the best in house technicians and application developers.</p>
+                            <a href="http://www.pcdoctor.ca" class="button">pcdoctor.ca</a></div>
+                    </div>
+                    <div class="column">
+                        <div class="box">
+                            <li>
+                                <h3>The Hackers</h3>
+                            </li>
+                            <p>The Hackers provide the best computer repair services in Vancouver. If you live in Vancouver, they'll be there to help you with all computer issues.</p>
+                            <a href="http://thehackery.ca/" class="button">thehackery.ca</a></div>
+
+                    </div>
+                </ol>
+            </div>
+        </div>
+    </div>
+
+    <div id="footer" onload="showTime(); setInterval('showTime()', 1000 )">
+        <address id="add">&#8226; 2197 Saddleback Dr, Kamloops, BC &#8226;</address>
+        <p>This page was created by inspired, enthusiastic, talanted, and target-oriented computer science student of Thompson Rivers University.</p>
+
+        <div style="width: 15em; text-align: center; margin: 20px auto;">
+            <span id="clock">&nbsp;</span>
+
+            <p><a href=cross-reference.html>Cross-reference page</a></p>
+            
+            <p><br> Last Updated: <time datetime="2018-04-11 04:00">04/11/2018</time>
+            </p>
+        </div>
+    </div>
+
+</body>
+
+</html>

@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!--
+      Author: Maksym Kuzmenko
+      Date:   April 11, 2018
+
+      Filename:         0. contact-us.html
+      Supporting files: html files: 1. index.html , 2. services.html, 3. quick-fix.html, 4. about-us.html
+                        css files: 1. style.scc, 2. mobile.css, 3. contact-us-form.css, 3. fonts.css
+                        js.files: 1. show-Time.js, 2. show-Message.js
+    -->
+    
+    <meta charset="utf-8" />
+    <title>Express Repairs</title>
+    
+    <meta name="Maksym Kuzmenko" content="Express Repairs & Consultants LTD." />
+    <meta name="description" content="Express computer repair services" />
+    <meta name="keywords" content="Computer, Repair, Services, Kamloops, Express Repairs" />
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+    <!-- . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . FONTS . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . -->
+
+    <link href="http://fonts.googleapis.com/css?family=Source+Sans+Pro:200,300,400,600,700,900" rel="stylesheet" />
+    <link href="fonts.css" rel="stylesheet" type="text/css" media="all" />
+
+    <!-- . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . STYLESHEETS . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . -->
+
+    <link href="css/style.css" rel="stylesheet" type="text/css" media="all" />
+    <link href="css/mobile.css" rel="stylesheet" type="text/css" media="all" />
+    <link href="css/contact-us-form.css" rel="stylesheet" type="text/css" media="all" />
+
+    <!-- . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . SCRIPT . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . -->
+
+    <script src="js/show-Message.js"></script>
+    <script src="js/show-Time.js"></script>
+
+</head>
+
+<!-- . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . Services . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . -->
+
+<body onload="showClock(); setInterval('showClock()', 1000 )">
+    <div id="wrapper">
+        <div id="header-wrapper">
+            <div id="header" class="containe">
+                <div id="logo">
+                    <h1><a href="index.html">Express Repairs</a></h1>
+                </div>
+                <div id="social">
+                    <ul class="contact">
+                        <li><a href="https://twitter.com/" class="icon icon-twitter"><span>Twitter</span></a></li>
+                        <li><a href="https://www.facebook.com/" class="icon icon-facebook"><span>Facebook</span></a></li>
+                        <li><a href="https://www.tumblr.com/" class="icon icon-tumblr"><span>Google+</span></a></li>
+                    </ul>
+                </div>
+            </div>
+            <nav id="menu" class="nav">
+                <ul>
+                    <li><a href="index.html" class="nav-pages">Homepage</a></li>
+                    <li><a href="services.html" class="nav-pages">Services</a></li>
+                    <li><a href="quick-fix.html" class="nav-pages">Quick fix</a></li>
+                    <li><a href="about-us.html" class="nav-pages">About Us</a></li>
+                    <li class="current_page"><a href="contact-us.html" class="nav-pages">Contact Us</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div id="h-info" class="container">
+            <div>
+                <h2>Contact us</h2>
+                <div id="contact-us">
+                    <div>
+                        <h1>Hi, It's Express Repairs</h1>
+                        <h4>Have a question? That is why we are here for.</h4>
+                    </div>
+                    <form>
+                        <div>
+                            <label for="name">
+		      	<span class="required">Name: *</span> 
+		      	<input type="text" id="name" name="name" value="" placeholder="Your Name" required="required" tabindex="1" autofocus="autofocus" />
+		      </label>
+                        </div>
+                        <div>
+                            <label for="email">
+		      	<span class="required">Email: *</span>
+		      	<input type="email" id="email" name="email" value="" placeholder="Your Email" tabindex="2" required="required" />
+		      </label>
+                        </div>
+                        <div>
+                            <label for="subject">
+		      <span>Subject: </span>
+			      <select id="subject" name="subject" tabindex="4">
+                     <option value="default">Pick an option</option>
+			         <option value="hours">Open hours during holidays</option>
+			         <option value="price">Specific question about the price list</option>  
+			         <option value="joke">Why did you post tutorials about rebooting a PC?</option>
+			      </select>
+		      </label>
+                        </div>
+                        <div>
+                            <label for="message">
+		      	<span class="required">Message: *</span> 
+		      	<textarea id="message" name="message" placeholder="Please write your message here." tabindex="5" required="required"></textarea> 
+		      </label>
+                        </div>
+                        <div>
+                            <button id="submit" onclick="showMessage()">SEND</button>
+                        </div>
+                    </form>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="footer" onload="showTime(); setInterval('showTime()', 1000 )">
+        <address id="add">&#8226; 2197 Saddleback Dr, Kamloops, BC &#8226;</address>
+        <p>This page was created by inspired, enthusiastic, talanted, and target-oriented computer science student of Thompson Rivers University.</p>
+
+        <div style="width: 15em; text-align: center; margin: 20px auto;">
+            <span id="clock">&nbsp;</span>
+
+            <p><a href=cross-reference.html>Cross-reference page</a></p>s
+            
+            <p><br> Last Updated: <time datetime="2018-04-11 04:00">04/11/2018</time>
+            </p>
+        </div>
+    </div>
+
+</body>
+
+</html>

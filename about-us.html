@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!--
+      Author: Maksym Kuzmenko
+      Date:   April 11, 2018
+
+      Filename:         0. about-us.html
+      Supporting files: html files: 1. index.html , 2. services.html, 3. quick-fix.html, 4. contact-us.html
+                        css files: 1. style.scc, 2. mobile.css, 3. fonts.css
+                        js.files: 1. show-Time.js
+    -->
+
+    <meta charset="utf-8" />
+    <title>Express Repairs</title>
+    
+    <meta name="Maksym Kuzmenko" content="Express Repairs & Consultants LTD." />
+    <meta name="description" content="Express computer repair services" />
+    <meta name="keywords" content="Computer, Repair, Services, Kamloops, Express Repairs" />
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+    <!-- . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . FONTS . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . -->
+
+    <link href="http://fonts.googleapis.com/css?family=Source+Sans+Pro:200,300,400,600,700,900" rel="stylesheet" />
+    <link href="fonts.css" rel="stylesheet" type="text/css" media="all" />
+
+    <!-- . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . STYLESHEETS . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . -->
+
+    <link href="css/style.css" rel="stylesheet" type="text/css" media="all" />
+    <link href="css/mobile.css" rel="stylesheet" type="text/css" media="all" />
+
+    <!-- . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . SCRIPT . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . -->
+
+    <script src="js/show-Time.js"></script>
+
+</head>
+
+    <!-- . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . Services . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . -->
+
+<body onload="showClock(); setInterval('showClock()', 1000 )">
+    <div id="wrapper">
+        <div id="header-wrapper">
+            <div id="header" class="containe">
+                <div id="logo">
+                    <h1><a href="index.html">Express Repairs</a></h1>
+                </div>
+                <div id="social">
+                    <ul class="contact">
+                        <li><a href="https://twitter.com/" class="icon icon-twitter"><span>Twitter</span></a></li>
+                        <li><a href="https://www.facebook.com/" class="icon icon-facebook"><span>Facebook</span></a></li>
+                        <li><a href="https://www.tumblr.com/" class="icon icon-tumblr"><span>Google+</span></a></li>
+                    </ul>
+                </div>
+            </div>
+            <nav id="menu" class="nav">
+                <ul>
+                    <li><a href="index.html" class="nav-pages">Homepage</a></li>
+                    <li><a href="services.html" class="nav-pages">Services</a></li>
+                    <li><a href="quick-fix.html" class="nav-pages">Quick fix</a></li>
+                    <li class="current_page"><a href="#" class="nav-pages">About Us</a></li>
+                    <li><a href="contact-us.html" class="nav-pages">Contact Us</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div id="h-info" class="container">
+            <div>
+                <h2>About us</h2>
+            </div>
+            <p>October 1992 is the time when Mr.Robot was opened. The were only 2 people working at that time. That were Connor and his son Edvard. It was a small shop, that was barely able to gather more than 10 people at the same time.
+            </p>
+            <p>In 1998 we modernized the business name from Mr.Robot to Express Repairs. We also changed our location in order to be able to gather more customers in the shop. Express Repairs team consists of number of professional technicians and specialists in computer science that can deal with any problem your computer can fece. Each and every team member is passion about working with computers, as well as people. Only in our shop you can find the most friendly employees that strive helping you.
+            </p>
+
+            <p>You can rather check our open hours work time schedule or <a href="contact-us.html">contact us</a> directly.</p>
+        </div>
+
+        <div id="page" class="container">
+            <div>
+                <h2 id="hours">Open hours</h2>
+            </div>
+            <table id="hours-table">
+                <tr>
+                    <th>Sunday</th>
+                    <td>Closed</td>
+                </tr>
+                <tr>
+                    <th>Monday</th>
+                    <td>8am - 6pm</td>
+                </tr>
+                <tr>
+                    <th>Tuesday</th>
+                    <td>8am - 6pm</td>
+                </tr>
+                <tr>
+                    <th>Wednesday</th>
+                    <td>8am - 6pm</td>
+                </tr>
+                <tr>
+                    <th>Thursday</th>
+                    <td>8am - 6pm</td>
+                </tr>
+                <tr>
+                    <th>Friday</th>
+                    <td>8am - 6pm</td>
+                </tr>
+                <tr>
+                    <th>Saturday</th>
+                    <td>Closed</td>
+                </tr>
+            </table>
+            <p>Our phone number: (778) 233-3463</p>
+        </div>
+    </div>
+
+    <div id="footer" onload="showTime(); setInterval('showTime()', 1000 )">
+        <address id="add">&#8226; 2197 Saddleback Dr, Kamloops, BC &#8226;</address>
+        <p>This page was created by inspired, enthusiastic, talanted, and target-oriented computer science student of Thompson Rivers University.</p>
+
+        <div style="width: 15em; text-align: center; margin: 20px auto;">
+            <span id="clock">&nbsp;</span>
+
+            <p><a href=cross-reference.html>Cross-reference page</a></p>
+            
+            <p><br> Last Updated: <time datetime="2018-04-11 04:00">04/11/2018</time>
+            </p>
+        </div>
+    </div>
+
+</body>
+
+</html>

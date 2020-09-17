@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!--
+      Author: Maksym Kuzmenko
+      Date:   April 11, 2018
+
+      Filename:         0. quick-fix.html
+      Supporting files: html files: 1. index.html, 2. services.html, 3.about-us.html, 4. contact-us.html
+                        css files: 1. style.scc, 2. mobile.css, 3. fonts.css
+                        js.files: 1. show-Time.js
+    -->
+    
+    <meta charset="utf-8" />
+    <title>Express Repairs</title>
+    
+    <meta name="Maksym Kuzmenko" content="Express Repairs & Consultants LTD." />
+    <meta name="description" content="Express computer repair services" />
+    <meta name="keywords" content="Computer, Repair, Services, Kamloops, Express Repairs" />
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+    <!-- . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . FONTS . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . -->
+
+    <link href="http://fonts.googleapis.com/css?family=Source+Sans+Pro:200,300,400,600,700,900" rel="stylesheet" />
+    <link href="fonts.css" rel="stylesheet" type="text/css" media="all" />
+
+    <!-- . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . STYLESHEETS . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . -->
+
+    <link href="css/style.css" rel="stylesheet" type="text/css" media="all" />
+    <link href="css/mobile.css" rel="stylesheet" type="text/css" media="all" />
+
+    <!-- . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . SCRIPT . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . -->
+
+    <script src="js/show-Time.js"></script>
+
+</head>
+
+    <!-- . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . QUICK FIX . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . -->
+
+<body onload="showClock(); setInterval('showClock()', 1000 )">
+    <div id="wrapper">
+        <div id="header-wrapper">
+            <div id="header" class="containe">
+                <div id="logo">
+                    <h1><a href="index.html">Express Repairs</a></h1>
+                </div>
+                <div id="social">
+                    <ul class="contact">
+                        <li><a href="https://twitter.com/" class="icon icon-twitter"><span>Twitter</span></a></li>
+                        <li><a href="https://www.facebook.com/" class="icon icon-facebook"><span>Facebook</span></a></li>
+                        <li><a href="https://www.tumblr.com/" class="icon icon-tumblr"><span>Google+</span></a></li>
+                    </ul>
+                </div>
+            </div>
+            <nav id="menu" class="nav">
+                <ul>
+                    <li><a href="index.html" class="nav-pages">Homepage</a></li>
+                    <li><a href="services.html" class="nav-pages">Services</a></li>
+                    <li class="current_page"><a href="#" class="nav-pages">Quick fix</a></li>
+                    <li><a href="about-us.html" class="nav-pages">About Us</a></li>
+                    <li><a href="contact-us.html" class="nav-pages">Contact Us</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div id="h-info" class="container">
+            <div>
+                <h2>Try the quick fix. it might help</h2>
+            </div>
+            <p>Nowadays, most of hardware-based computer issues can be removed simply by rebooting your machine. Give it a shot if you haven't yet.</p>
+            <p>Here are several tutorials you can use to reboot your PC.</p>
+        </div>
+
+
+        <div id="videos" class="container">
+            <video width="375" height="275" controls>
+        <source src="videos/joke.mp4" type="video/mp4">
+    </video>
+            <video width="420" height="315" controls>
+        <source src="videos/joke2.mp4" type="video/mp4">
+    </video>
+            <video width="420" height="315" controls>
+        <source src="videos/joke3.mp4" type="video/mp4">
+    </video>
+        </div>
+
+        <div id="portfolio-wrapper">
+            <div id="portfolio" class="container">
+                <div class="title">
+                    Our motto
+                    <span class="byline">Think smart and work hard.</span></div>
+                <h3>Our partners</h3>
+                <ol>
+                    <div class="column">
+                        <div class="box">
+                            <li>
+                                <h3>Simba</h3>
+                            </li>
+                            <p>If you are looking for someone to deal with computer and network maintenance in Virginia, these guys you are looking for.</p>
+                            <a href="http://simbacom.net/hardware-networking/" class="button">simbacom.net</a></div>
+                    </div>
+                    <div class="column">
+                        <div class="box">
+                            <li>
+                                <h3>Pc Doctors</h3>
+                            </li>
+                            <p>Those guys are the best mobile technicians in Kamloops. They also have the best in house technicians and application developers.</p>
+                            <a href="http://www.pcdoctor.ca" class="button">pcdoctor.ca</a></div>
+                    </div>
+                    <div class="column">
+                        <div class="box">
+                            <li>
+                                <h3>The Hackers</h3>
+                            </li>
+                            <p>The Hackers provide the best computer repair services in Vancouver. If you live in Vancouver, they'll be there to help you with all computer issues.</p>
+                            <a href="http://thehackery.ca/" class="button">thehackery.ca</a></div>
+
+                    </div>
+                </ol>
+            </div>
+        </div>
+    </div>
+
+    <div id="footer" onload="showTime(); setInterval('showTime()', 1000 )">
+        <address id="add">&#8226; 2197 Saddleback Dr, Kamloops, BC &#8226;</address>
+        <p>This page was created by inspired, enthusiastic, talanted, and target-oriented computer science student of Thompson Rivers University.</p>
+
+        <div style="width: 15em; text-align: center; margin: 20px auto;">
+            <span id="clock">&nbsp;</span>
+            
+            <p><a href=cross-reference.html>Cross-reference page</a></p>
+
+            <p><br> Last Updated: <time datetime="2018-04-11 04:00">04/11/2018</time>
+            </p>
+        </div>
+    </div>
+
+</body>
+
+</html>
